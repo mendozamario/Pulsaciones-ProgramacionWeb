@@ -9,7 +9,7 @@ import { Person } from '../models/Person';
 export class PersonService {
 
   baseUrl:string;
-  apiUrl = 'api/person';
+  apiUrl = 'api/person/';
   constructor(
     private http: HttpClient,
     @Inject('BASE_URL') baseUrl:string
@@ -17,8 +17,12 @@ export class PersonService {
     this.baseUrl = baseUrl;
   }
 
-  get(): Observable<Person[]>{
+  getAll(): Observable<Person[]>{
     return this.http.get<Person[]>(this.baseUrl + this.apiUrl);
+  }
+
+  getPerson(id: string): Observable<Person>{
+    return this.http.get<Person>(this.baseUrl + this.apiUrl + id);
   }
 
   post(person: Person): Observable<Person>{
@@ -29,4 +33,7 @@ export class PersonService {
     return this.http.delete<Person>(this.baseUrl + this.apiUrl + id)
   }
 
+  update(person: Person): Observable<Person>{
+    return this.http.put<Person>(this.baseUrl + this.apiUrl, person);
+  }
 }

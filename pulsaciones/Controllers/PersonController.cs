@@ -31,9 +31,18 @@ namespace pulsaciones.Controllers
 
         // GET api/<PersonController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<Person> Get(string id)
         {
-            return "value";
+            var person = _personService.Consult(id);
+            if (person != null)
+            {
+                return Ok(person);
+            }
+            else
+            {
+                return NotFound();
+            }
+            
         }
 
         // POST api/<PersonController>
@@ -59,6 +68,7 @@ namespace pulsaciones.Controllers
             string message = _personService.Delete(id);
             return Ok(message);
         }
+
         public Person MapPerson(PersonInputModel personInput)
         {
             var person = new Person()

@@ -17,7 +17,7 @@ export class QueryComponent implements OnInit {
   }
 
   loadPerson(){
-    this.personService.get().subscribe(data => {
+    this.personService.getAll().subscribe(data => {
       this.persons = data;
     })
   }
@@ -26,6 +26,7 @@ export class QueryComponent implements OnInit {
     this.personService.delete(id).subscribe(data => {
       alert('this person has been remove');
       this.loadPerson();
-    })
+    });
+    alert('this person has been removed');
   }
 }
