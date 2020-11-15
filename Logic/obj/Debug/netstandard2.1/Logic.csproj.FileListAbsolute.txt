@@ -1,0 +1,14 @@
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Logic.deps.json
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Logic.dll
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Logic.pdb
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Data.dll
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Data.pdb
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.csprojAssemblyReference.cache
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.AssemblyInfoInputs.cache
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.AssemblyInfo.cs
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.csproj.CoreCompileInputs.cache
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.csproj.CopyComplete
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.dll
+C:\Users\mendo\Documents\Programas Web\Pulsaciones-ProgramacionWeb\Logic\obj\Debug\netstandard2.1\Logic.pdb

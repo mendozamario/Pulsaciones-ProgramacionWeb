@@ -1,0 +1,15 @@
+.title{
+    padding-top: 30px;
+}
+.textTitle{
+    float: left;
+}
+.buttonTitle{
+    float: right;
+}
+.texts{
+    text-align: justify;
+}
+.img01{
+    align-items: center;
+}

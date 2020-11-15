@@ -1,0 +1,28 @@
+<div class="title">
+    <h3><strong>People consultation.</strong></h3>
+</div>
+<hr>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Pulsation</th>
+            <th>Remove person</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let person of persons; index as i">
+            <th>{{ i + 1}}</th>
+            <td>{{ person.id }}</td>
+            <td>{{ person.name }}</td>
+            <td>{{ person.age }}</td>
+            <td>{{ person.gender }}</td>
+            <td>{{ person.pulsation }}</td>
+            <td><Button class="btn btn-danger" (click) = "deletePerson(person.id)">Delete</Button></td>
+        </tr>
+    </tbody>
+</table>

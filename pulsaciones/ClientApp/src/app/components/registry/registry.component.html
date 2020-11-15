@@ -1,0 +1,45 @@
+<div class="title">
+    <h3><strong>People registration.</strong></h3>
+</div>
+<hr>
+<form [formGroup] = "formGroup">
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input class="form-control" type="text" name="id" id="id" placeholder="Enter your id" formControlName = "id">
+    </div>
+    <span class="text-danger ml-3" *ngIf = "formGroup.get('id').hasError('required') && formGroup.get('id').touched">
+        Identification is required
+    </span>
+    <div class="for-group">
+        <label for="name">Name:</label>
+        <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" formControlName = "name">
+    </div>
+    <span class="text-danger ml-3" *ngIf = "formGroup.get('name').hasError('required') && formGroup.get('name').touched">
+        Name is required
+    </span>
+    <br>
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input class="form-control" type="number" name="age" id="age" placeholder="Enter your age" formControlName = "age">
+    </div>
+    <span class="text-danger ml-3" *ngIf = "formGroup.get('age').hasError('required') && formGroup.get('age').touched">
+        Age is required
+    </span>
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" name="gender" id="gender" formControlName = "gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+    <span class="text-danger ml-3" *ngIf = "formGroup.get('gender').hasError('required') && formGroup.get('gender').touched">
+        Gender is required
+    </span>
+    <div class="btn-add">
+        <button class="btn btn-success" (click) = "onSubmit()" [disabled] = "formGroup.invalid">Add person</button>
+    </div>
+    <div class="btn-reset">
+        <button class="btn btn-danger" type="reset">Reset form</button>
+    </div>
+</form>
+<br><br>
